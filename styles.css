@@ -34,6 +34,8 @@ button { font: inherit; }
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--blue-deep); }
 .site-nav .nav-tribute { padding: 11px 15px; border: 1px solid var(--ink); }
 .nav-tribute span { margin-left: 7px; }
+.site-nav .nav-ronaldo { color: var(--blue-deep); font-weight: 700; }
+.nav-ronaldo span { margin-left: 5px; }
 .menu-toggle { display: none; }
 
 .hero { position: relative; display: grid; grid-template-columns: minmax(0, .93fr) minmax(400px, 1.07fr); align-items: center; width: min(100% - 64px, 1400px); min-height: 660px; margin: 0 auto; padding: 32px 0 66px; }
@@ -126,6 +128,12 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .comparison-close { display: flex; grid-column: 1 / -1; align-items: center; gap: 21px; margin: 12px 0 0; padding-top: 27px; border-top: 1px solid var(--line); }
 .comparison-close span { color: var(--gold); font-family: var(--serif); font-size: 68px; line-height: .8; }
 .comparison-close p { max-width: 640px; margin: 0; font-family: var(--serif); font-size: 20px; line-height: 1.5; }
+.counterpoint-cta { display: flex; grid-column: 1 / -1; align-items: center; justify-content: space-between; gap: 24px; margin-top: 8px; padding: 20px 23px; background: var(--green); color: white; text-decoration: none; transition: background .2s ease; }
+.counterpoint-cta:hover, .counterpoint-cta:focus-visible { background: var(--green-dark); }
+.counterpoint-cta > span:first-child { display: grid; gap: 3px; }
+.counterpoint-cta small { color: #b9dfdc; font-size: 8px; font-weight: 700; letter-spacing: 1.5px; }
+.counterpoint-cta strong { font-family: var(--serif); font-size: 20px; font-weight: 500; }
+.counterpoint-arrow { color: var(--gold); font-size: 24px; }
 
 .finale { display: flex; min-height: 360px; align-items: center; justify-content: space-between; gap: 44px; padding: 70px max(32px, calc((100vw - var(--content)) / 2)); background: var(--green); color: white; }
 .finale .eyebrow { margin-bottom: 22px; }
@@ -169,6 +177,7 @@ h1, h2, h3, p, figure { margin-top: 0; }
   .site-nav.is-open { display: flex; flex-direction: column; }
   .site-nav a { padding: 12px 2px; border-bottom: 1px solid var(--line); }
   .site-nav .nav-tribute { align-self: flex-start; margin-top: 10px; padding: 9px 13px; border: 1px solid var(--ink); }
+  .site-nav .nav-ronaldo { padding-top: 12px; }
   .hero { grid-template-columns: 1fr; width: 100%; min-height: 0; padding: 27px 18px 47px; }
   .hero-copy { padding: 12px 0 30px; }
   .eyebrow { margin-bottom: 18px; font-size: 9px; }
@@ -214,6 +223,8 @@ h1, h2, h3, p, figure { margin-top: 0; }
   .comparison-row .comparison-word { font-size: 9px; }
   .comparison-close { gap: 15px; }
   .comparison-close p { font-size: 17px; }
+  .counterpoint-cta { padding: 17px 15px; }
+  .counterpoint-cta strong { font-size: 17px; }
   .finale { min-height: 0; flex-direction: column; align-items: stretch; gap: 35px; padding: 63px 18px; }
   .finale h2 { font-size: 39px; }
   .finale-score { min-width: 0; }
